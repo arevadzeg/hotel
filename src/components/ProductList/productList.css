@@ -1,0 +1,33 @@
+.products_list-wrapper video {
+    width: 100%;
+}
+
+.product_wrapper {
+    display: flex;
+}
+
+.product_wrapper img {
+    width: 50%;
+}
+
+.product_description {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.product_button {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+
+.product_button:hover {
+    background-color: #000;
+    color: #fff;
+}
