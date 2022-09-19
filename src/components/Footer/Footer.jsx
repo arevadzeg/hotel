@@ -6,16 +6,17 @@ const Footer = () => {
 
     const [footerStyles, setFooterStyles] = useState(null)
     const [footerColumns, setFooterColumns] = useState([])
+    const [enable, setEnable] = useState([])
 
     useEffect(() => {
-        const { styles, footerColumns } = config.footer
+        const { styles, footerColumns, enable } = config.footer
         setFooterStyles(styles)
         setFooterColumns(footerColumns)
+        setEnable(enable)
     }, [])
 
-    return <footer style={footerStyles?.general} className='footer'>
+    return enable && <footer style={footerStyles?.general} className='footer'>
         <div className="footer_links-wrapper">
-
             {
                 footerColumns.map((column) => {
                     return <div >
@@ -34,8 +35,6 @@ const Footer = () => {
                 })
             }
         </div>
-
-
         <p>All rights reserved</p>
     </footer>
 

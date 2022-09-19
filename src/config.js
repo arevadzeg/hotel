@@ -3,12 +3,12 @@ const config = {
     header: {
         styles: {
             color: '#fff',
-            enable: true,
             backgroundColor: '#000',
             fontWeight: 500,
             fontSize: "16px",
             padding: '35px 20px',
         },
+        enable: true,
         logo: 'https://roomshotels.com/wp-content/themes/roomshotelsv2/img/logo-secondary-white.svg',
         navItems: [
             {
@@ -31,6 +31,7 @@ const config = {
     },
 
     productList: {
+        enable: true,
         backgroundVideo: "https://roomshotels.com/wp-content/uploads/2021/09/Rooms-Tbilisi-1600px_s.mp4",
         styles: {
             postStyles: {
@@ -93,7 +94,7 @@ const config = {
 
 
     footer: {
-
+        enable: true,
         styles: {
             general: {
                 backgroundColor: '#000',
@@ -126,11 +127,8 @@ const config = {
                     { text: 'Pinterest' }
                 ]
             },
-
         ]
     }
-
-
 }
 
 

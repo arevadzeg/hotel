@@ -7,21 +7,22 @@ const Header = () => {
     const [logo, setLogo] = useState(null)
     const [navItems, setNavItems] = useState([])
     const [styles, setStyles] = useState(null)
+    const [enable, setEnable] = useState([])
+
 
 
     useEffect(() => {
-        const { logo, navItems, styles } = config.header
+        const { logo, navItems, styles, enable } = config.header
         setLogo(logo)
         setNavItems(navItems)
         setStyles(styles)
+        setEnable(enable)
+
     }, [])
 
 
-    return <header style={styles} className='header'>
-
-
+    return enable && <header style={styles} className='header'>
         <img src={logo} alt="logo" />
-
         <div className="nav-items">
             {
                 navItems.map((navItem, i) => {
@@ -30,9 +31,7 @@ const Header = () => {
                     </div>
                 })
             }
-
         </div>
-
     </header>
 }
 
