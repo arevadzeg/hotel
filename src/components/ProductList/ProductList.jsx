@@ -9,7 +9,7 @@ const ProductList = () => {
     const [productsListHeader, setProductsListHeader] = useState(null)
 
     useEffect(() => {
-        const { list, productsListHeader, ...styles } = config.productList
+        const { list, productsListHeader, styles } = config.productList
         setProducts(list)
         setStyles(styles)
         setProductsListHeader(productsListHeader)
@@ -19,7 +19,7 @@ const ProductList = () => {
 
     return <div className="products_list-wrapper">
         <video src={config.productList.backgroundVideo} autoPlay muted loop />
-        {productsListHeader && <h2 style={productsListHeader.styles}>{productsListHeader.text}</h2>}
+        {productsListHeader && <h2 style={styles.productsListHeaderStyles}>{productsListHeader.text}</h2>}
         {
             products.map((product, i) => {
                 return <div className="product_wrapper" key={i}>

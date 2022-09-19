@@ -1,0 +1,27 @@
+.footer_links-wrapper {
+    display: flex;
+    gap: 75px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer>p {
+    color: #fff;
+    text-align: center;
+}
+
+.footer_column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer_link:hover {
+    opacity: 0.7;
+}
+
+.footer_link {
+    cursor: pointer;
+}

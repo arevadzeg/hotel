@@ -1,12 +1,14 @@
 
 const config = {
     header: {
-        color: '#fff',
-        enable: true,
-        backgroundColor: '#000',
-        fontWeight: 500,
-        fontSize: "16px",
-        padding: '15px 20px',
+        styles: {
+            color: '#fff',
+            enable: true,
+            backgroundColor: '#000',
+            fontWeight: 500,
+            fontSize: "16px",
+            padding: '35px 20px',
+        },
         logo: 'https://roomshotels.com/wp-content/themes/roomshotelsv2/img/logo-secondary-white.svg',
         navItems: [
             {
@@ -30,31 +32,33 @@ const config = {
 
     productList: {
         backgroundVideo: "https://roomshotels.com/wp-content/uploads/2021/09/Rooms-Tbilisi-1600px_s.mp4",
-        postStyles: {
-            backgroundColor: "#fff",
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '4vw'
-        },
-        postHeader: {
-            fontSize: "25px",
-            color: "#000",
-            fontWeight: 600,
-        },
-        postDescription: {
-            fontSize: "20px",
-            color: "#000",
-            fontWeight: 400,
-        },
-        productsListHeader: {
-            text: 'Original Experiences in Tbilisi',
-            styles: {
+        styles: {
+            postStyles: {
+                backgroundColor: "#fff",
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '4vw'
+            },
+            postHeader: {
+                fontSize: "25px",
+                color: "#000",
+                fontWeight: 600,
+            },
+            postDescription: {
+                fontSize: "20px",
+                color: "#000",
+                fontWeight: 400,
+            },
+            productsListHeaderStyles: {
                 fontSize: "48px",
                 color: "#000",
                 fontWeight: 400,
                 textAlign: 'center',
                 margin: '90px'
             }
+        },
+        productsListHeader: {
+            text: 'Original Experiences in Tbilisi',
         },
         list: [
             {
@@ -83,6 +87,45 @@ const config = {
                     enable: false,
                 }
             }
+
+        ]
+    },
+
+
+    footer: {
+
+        styles: {
+            general: {
+                backgroundColor: '#000',
+                padding: '55px',
+            },
+            header: {
+                fontSize: "18px",
+                color: "#fff",
+            },
+            footerLink: {
+                fontSize: "16px",
+                color: "#ddd",
+            }
+        },
+        footerColumns: [
+            {
+                header: 'DESTINATIONS',
+                links: [
+                    { text: 'London' },
+                    { text: 'Barcelona' },
+                    { text: 'New Your' },
+                    { text: 'Los angeles' },
+                ]
+            },
+            {
+                header: "SOCIAL MEDIA",
+                links: [
+                    { text: 'Facebook' },
+                    { text: 'Instagram' },
+                    { text: 'Pinterest' }
+                ]
+            },
 
         ]
     }

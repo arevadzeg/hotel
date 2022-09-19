@@ -6,11 +6,12 @@
 
 .header img {
     max-width: 150px;
+    max-height: 100px;
 }
 
 .nav-items {
     display: flex;
-    gap: 15px;
+    gap: 24px;
     cursor: pointer;
 }
 

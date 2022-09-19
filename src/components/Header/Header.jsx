@@ -8,10 +8,9 @@ const Header = () => {
     const [navItems, setNavItems] = useState([])
     const [styles, setStyles] = useState(null)
 
-    console.log(logo)
 
     useEffect(() => {
-        const { logo, navItems, ...styles } = config.header
+        const { logo, navItems, styles } = config.header
         setLogo(logo)
         setNavItems(navItems)
         setStyles(styles)
